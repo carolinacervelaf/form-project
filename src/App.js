@@ -11,7 +11,7 @@ function App() {
   return (
     <Container component="article" maxWidth="sm" >
       <Typography variant='h3' component='h1' color='primary' align='center'>Formulário de Cadastro</Typography>
-      <ValidacoesCadastro.Provider value={{ cpf: validarCPF, senha: validarSenha }}>
+      <ValidacoesCadastro.Provider value={{cpf: validarCPF, senha: validarSenha}}>
         <FormularioCadastro aoEnviar={aoEnviarForm} />
       </ValidacoesCadastro.Provider>
     </Container>
